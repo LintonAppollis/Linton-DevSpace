@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuScreen">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="back"
+        android:id="@+id/back"
+        android:layout_margin="20dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="My Profile"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_margin="0dp"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ScrollView
+                    android:layout_width="174dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="1dp"
+                        android:text=" Hi there, my name is Linton Appolls, Application Development Student.\n \n I am a husband and father of a beautiful son.
+I love watching football and spending time with family.\n \n The reason for taking this course was to enrich my knowledge of software development.\n \n
+
+
+My aspiration is to become a IT Manager and assist companies with enabling their business,using Information Technology.\n \n
+
+
+Follow me on https://github.com/LintonAppollis"
+
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="0.7">
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/profile" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
